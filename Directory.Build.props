@@ -13,6 +13,8 @@
     <Copyright>Copyright (c) Nicolas</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/nestebe/PrivateMarkets.Metrics</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/nestebe/PrivateMarkets.Metrics</PackageProjectUrl>
     <PackageTags>private-equity;private-markets;tvpi;dpi;irr;xirr;pme;kaplan-schoar;direct-alpha;finance</PackageTags>
     <Version>0.4.0</Version>
   </PropertyGroup>
