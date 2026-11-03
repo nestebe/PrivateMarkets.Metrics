@@ -1,0 +1,103 @@
+name: Release
+
+# Publishes PrivateMarkets.Metrics and PrivateMarkets.Metrics.Mcp to nuget.org when a version tag is pushed:
+#   git tag v0.4.0 && git push origin v0.4.0
+# Authentication uses nuget.org Trusted Publishing (OIDC), so no long-lived API key is stored. See RELEASING.md.
+
+on:
+  push:
+    tags: ["v[0-9]+.[0-9]+.[0-9]+*"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: |
+            8.0.x
+            10.0.x
+
+      - name: Read version from tag
+        id: version
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "Releasing $version"
+
+      - name: Check the changelog has an entry for this version
+        run: grep -q "^## \[${{ steps.version.outputs.version }}\]" CHANGELOG.md || { echo "::error::CHANGELOG.md has no '## [${{ steps.version.outputs.version }}]' section"; exit 1; }
+
+      - run: dotnet restore
+      - run: dotnet build --no-restore --configuration Release -p:Version=${{ steps.version.outputs.version }}
+      - run: dotnet test --no-build --configuration Release
+
+      - name: Pack
+        run: |
+          for project in src/PrivateMarkets.Metrics src/PrivateMarkets.Metrics.Mcp; do
+            dotnet pack "$project" --no-build --configuration Release -p:Version=${{ steps.version.outputs.version }} --output artifacts
+          done
+          ls -l artifacts
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: packages
+          path: artifacts/
+          if-no-files-found: error
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: nuget
+    permissions:
+      id-token: write   # OIDC token exchanged for a short-lived nuget.org API key
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: packages
+          path: artifacts
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.x
+
+      - name: NuGet login (OIDC to temporary API key)
+        uses: NuGet/login@v1
+        id: login
+        with:
+          user: ${{ secrets.NUGET_USER }}
+
+      # Symbol packages (.snupkg) next to each .nupkg are pushed automatically.
+      - name: Push to nuget.org
+        run: dotnet nuget push "artifacts/*.nupkg" --api-key "${{ steps.login.outputs.NUGET_API_KEY }}" --source https://api.nuget.org/v3/index.json --skip-duplicate
+
+  github-release:
+    needs: [build, publish]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8
+        with:
+          name: packages
+          path: artifacts
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ needs.build.outputs.version }}
+        run: |
+          prerelease=""
+          if [[ "$VERSION" == *-* ]]; then prerelease="--prerelease"; fi
+          gh release create "$GITHUB_REF_NAME" artifacts/* --title "v$VERSION" --generate-notes $prerelease

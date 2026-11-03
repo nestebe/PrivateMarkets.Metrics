@@ -24,6 +24,9 @@ dotnet tool install --global PrivateMarkets.Metrics.Mcp --add-source ./artifacts
 This puts a `privatemarkets-mcp` command on your `PATH`. Once the package is published on NuGet, the second
 command alone (without `--add-source`) is enough. Update with `dotnet tool update --global PrivateMarkets.Metrics.Mcp`.
 
+**Without installing anything (.NET 10 SDK, once published on NuGet).** `dnx` downloads and runs the package on
+demand; use `"command": "dnx", "args": ["PrivateMarkets.Metrics.Mcp", "--yes"]` in the configurations below.
+
 **From source, without installing.** Publish once and point the client at the DLL:
 
 ```bash

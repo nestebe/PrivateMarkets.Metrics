@@ -1,5 +1,7 @@
 # PrivateMarkets.Metrics.Mcp
 
+<!-- mcp-name: io.github.nestebe/privatemarkets-metrics -->
+
 MCP server (stdio) exposing [PrivateMarkets.Metrics](https://www.nuget.org/packages/PrivateMarkets.Metrics) to AI agents.
 
 | Tool | What it computes |

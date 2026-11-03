@@ -31,4 +31,19 @@
     <InternalsVisibleTo Include="PrivateMarkets.Metrics.Mcp.Tests" />
   </ItemGroup>
 
+  <!-- Ships .mcp/server.json (MCP registry metadata read by nuget.org) stamped with the package version. -->
+  <Target Name="StampMcpServerJson" BeforeTargets="_GetPackageFiles">
+    <PropertyGroup>
+      <StampedMcpServerJson>$(IntermediateOutputPath)server.json</StampedMcpServerJson>
+    </PropertyGroup>
+    <WriteLinesToFile
+      File="$(StampedMcpServerJson)"
+      Lines="$([System.IO.File]::ReadAllText('$(MSBuildProjectDirectory)/.mcp/server.json').Replace('0.0.0-dev', '$(Version)'))"
+      Overwrite="true"
+      WriteOnlyWhenDifferent="true" />
+    <ItemGroup>
+      <None Include="$(StampedMcpServerJson)" Pack="true" PackagePath=".mcp/server.json" />
+    </ItemGroup>
+  </Target>
+
 </Project>

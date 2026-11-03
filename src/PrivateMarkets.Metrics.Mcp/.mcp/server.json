@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.nestebe/privatemarkets-metrics",
+  "title": "Private Markets Metrics",
+  "description": "Private equity fund metrics: TVPI, DPI, RVPI, IRR, PME (Kaplan-Schoar, Direct Alpha, PME+, mPME), vintage quartiles and J-curves.",
+  "version": "0.0.0-dev",
+  "repository": {
+    "url": "https://github.com/nestebe/PrivateMarkets.Metrics",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "nuget",
+      "identifier": "PrivateMarkets.Metrics.Mcp",
+      "version": "0.0.0-dev",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
