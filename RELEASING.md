@@ -24,10 +24,10 @@ temporary API key valid for one hour. No API key is stored in the repository.
    | Workflow File | `release.yml` |
    | Environment | `nuget` |
 
-2. **GitHub**: *Settings > Secrets and variables > Actions*, add the repository secret `NUGET_USER` with your
-   nuget.org **profile name** (not your e-mail address).
+   The nuget.org profile name (`nestebe`) is set in the `user:` input of the `NuGet/login` step; it is public
+   information, not a credential.
 
-3. Optional, recommended: *Settings > Environments > nuget* (created by the first run, or create it beforehand)
+2. Optional, recommended: *Settings > Environments > nuget* (created by the first run, or create it beforehand)
    and add yourself as **required reviewer**, so every publication waits for your approval.
 
 ## Cutting a release
