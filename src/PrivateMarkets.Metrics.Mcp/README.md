@@ -9,19 +9,23 @@ MCP server (stdio) exposing [PrivateMarkets.Metrics](https://www.nuget.org/packa
 | `vintage_summary` | Pooled metrics and quartiles per vintage year |
 | `compute_j_curve` | Metrics at each period end (J-curve) |
 
-## Use it from an MCP client
+## Install and connect
+
+```bash
+dotnet tool install --global PrivateMarkets.Metrics.Mcp
+claude mcp add private-markets -- privatemarkets-mcp
+```
+
+Other clients (Claude Desktop, VS Code):
 
 ```json
 {
   "mcpServers": {
-    "private-markets": {
-      "command": "dotnet",
-      "args": ["run", "--project", "src/PrivateMarkets.Metrics.Mcp"]
-    }
+    "private-markets": { "command": "privatemarkets-mcp" }
   }
 }
 ```
 
-Once packed as a .NET tool (`dotnet pack`), the server can also be started with `privatemarkets-mcp`.
+Full guide, tool parameters and troubleshooting: [docs/mcp-server.md](https://github.com/nestebe/PrivateMarkets.Metrics/blob/main/docs/mcp-server.md).
 
 Cash flow amounts are positive; their direction comes from `type` (`Call`, `Distribution`, `Fee`, `RecallableDistribution`). Dates use `yyyy-MM-dd`.

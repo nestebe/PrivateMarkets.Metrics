@@ -12,6 +12,22 @@ XIRR, PME (Long-Nickels, PME+, Kaplan-Schoar, mPME), Direct Alpha**, vintage-yea
 dotnet add package PrivateMarkets.Metrics
 ```
 
+(Until the package is on NuGet, see [installing from source](docs/getting-started.md#1-install).)
+
+## Documentation
+
+| | |
+|---|---|
+| [Getting started](docs/getting-started.md) | install and compute a first TVPI / IRR in five minutes |
+| [Core concepts](docs/concepts.md) | cash flow types, NAV roll-forward, valuation date, conventions |
+| [Multiples, IRR and J-curve](docs/metrics.md) | what each figure means and how it is computed |
+| [Benchmarking with PME](docs/pme.md) | KS-PME, Direct Alpha, LN, PME+, mPME and which one to use |
+| [Portfolios and vintages](docs/portfolios-and-vintages.md) | pooled metrics, vintage summaries, quartile ranking |
+| [Export](docs/export.md) | CSV and JSON for Excel, Power BI or other systems |
+| [MCP server](docs/mcp-server.md) | connect Claude, Copilot or any MCP client |
+| [Recipes](docs/recipes.md) | load a CSV, quarterly LP report, GP figure checks, period IRRs... |
+| [FAQ](docs/faq.md) | `null` values, gaps with Excel or GP reports, errors |
+
 ## Quick start
 
 ```csharp
@@ -138,13 +154,13 @@ python -m venv .venv && .venv/Scripts/pip install -r tests/parity/requirements.t
 `PrivateMarkets.Metrics.Mcp` exposes `compute_fund_metrics`, `compute_pme`, `vintage_summary` and
 `compute_j_curve` over stdio, for prompts such as *"compute the DPI of Fund III and compare it to its vintage median"*.
 
-```json
-{
-  "mcpServers": {
-    "private-markets": { "command": "dotnet", "args": ["run", "--project", "src/PrivateMarkets.Metrics.Mcp"] }
-  }
-}
+```bash
+dotnet pack src/PrivateMarkets.Metrics.Mcp -c Release -o ./artifacts
+dotnet tool install --global PrivateMarkets.Metrics.Mcp --add-source ./artifacts
+claude mcp add private-markets -- privatemarkets-mcp
 ```
+
+Setup for Claude Desktop, VS Code and other clients, tool parameters and troubleshooting: [docs/mcp-server.md](docs/mcp-server.md).
 
 ## Build and test
 
