@@ -4,13 +4,11 @@
 
 The library targets .NET 8 and .NET 10 and has no dependency.
 
-**From NuGet** (once the package is published):
-
 ```bash
 dotnet add package PrivateMarkets.Metrics
 ```
 
-**From source**, until then, either reference the project:
+**From source**, to use unreleased changes, either reference the project:
 
 ```bash
 git clone https://github.com/nestebe/PrivateMarkets.Metrics.git

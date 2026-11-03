@@ -14,20 +14,25 @@ Example prompts once connected:
 
 The server runs over **stdio** and needs the .NET 10 runtime.
 
-**As a .NET tool (recommended).** From a clone of the repository:
+**As a .NET tool (recommended).**
+
+```bash
+dotnet tool install --global PrivateMarkets.Metrics.Mcp
+```
+
+This puts a `privatemarkets-mcp` command on your `PATH`. Update with `dotnet tool update --global PrivateMarkets.Metrics.Mcp`.
+
+**Without installing anything (.NET 10 SDK).** `dnx` downloads and runs the package on demand; use
+`"command": "dnx", "args": ["PrivateMarkets.Metrics.Mcp", "--yes"]` in the configurations below.
+
+**From source.** To run a version that is not released yet, from a clone of the repository:
 
 ```bash
 dotnet pack src/PrivateMarkets.Metrics.Mcp -c Release -o ./artifacts
 dotnet tool install --global PrivateMarkets.Metrics.Mcp --add-source ./artifacts
 ```
 
-This puts a `privatemarkets-mcp` command on your `PATH`. Once the package is published on NuGet, the second
-command alone (without `--add-source`) is enough. Update with `dotnet tool update --global PrivateMarkets.Metrics.Mcp`.
-
-**Without installing anything (.NET 10 SDK, once published on NuGet).** `dnx` downloads and runs the package on
-demand; use `"command": "dnx", "args": ["PrivateMarkets.Metrics.Mcp", "--yes"]` in the configurations below.
-
-**From source, without installing.** Publish once and point the client at the DLL:
+or publish once and point the client at the DLL:
 
 ```bash
 dotnet publish src/PrivateMarkets.Metrics.Mcp -c Release -o ./mcp-server

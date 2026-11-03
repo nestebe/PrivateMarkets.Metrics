@@ -1,5 +1,10 @@
 # PrivateMarkets.Metrics
 
+[![NuGet](https://img.shields.io/nuget/v/PrivateMarkets.Metrics.svg)](https://www.nuget.org/packages/PrivateMarkets.Metrics)
+[![NuGet MCP server](https://img.shields.io/nuget/v/PrivateMarkets.Metrics.Mcp.svg?label=mcp%20server)](https://www.nuget.org/packages/PrivateMarkets.Metrics.Mcp)
+[![CI](https://github.com/nestebe/PrivateMarkets.Metrics/actions/workflows/ci.yml/badge.svg)](https://github.com/nestebe/PrivateMarkets.Metrics/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Performance metrics for private equity and private markets funds in .NET: **TVPI, DPI, RVPI, PIC, MOIC,
 XIRR, PME (Long-Nickels, PME+, Kaplan-Schoar, mPME), Direct Alpha**, vintage-year aggregation and J-curves.
 
@@ -11,8 +16,6 @@ XIRR, PME (Long-Nickels, PME+, Kaplan-Schoar, mPME), Direct Alpha**, vintage-yea
 ```
 dotnet add package PrivateMarkets.Metrics
 ```
-
-(Until the package is on NuGet, see [installing from source](docs/getting-started.md#1-install).)
 
 ## Documentation
 
@@ -155,8 +158,7 @@ python -m venv .venv && .venv/Scripts/pip install -r tests/parity/requirements.t
 `compute_j_curve` over stdio, for prompts such as *"compute the DPI of Fund III and compare it to its vintage median"*.
 
 ```bash
-dotnet pack src/PrivateMarkets.Metrics.Mcp -c Release -o ./artifacts
-dotnet tool install --global PrivateMarkets.Metrics.Mcp --add-source ./artifacts
+dotnet tool install --global PrivateMarkets.Metrics.Mcp
 claude mcp add private-markets -- privatemarkets-mcp
 ```
 
