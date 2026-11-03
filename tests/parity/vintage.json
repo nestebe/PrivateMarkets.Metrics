@@ -1,0 +1,2723 @@
+{
+ "source": "privateassets==0.7.1 compute_vintage_stats (ACT/365.25); numpy.percentile linear; scipy pooled IRR",
+ "dayCount": "Actual36525",
+ "asOf": "2025-12-31",
+ "funds": [
+  {
+   "name": "Fund 2015-1",
+   "vintageYear": 2015,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2015-06-15",
+     "amount": 8525476.23,
+     "type": "Call"
+    },
+    {
+     "date": "2015-09-04",
+     "amount": 11000598.64,
+     "type": "Call"
+    },
+    {
+     "date": "2015-11-19",
+     "amount": 11096823.55,
+     "type": "Call"
+    },
+    {
+     "date": "2016-02-23",
+     "amount": 6478488.5,
+     "type": "Call"
+    },
+    {
+     "date": "2016-07-07",
+     "amount": 9013414.21,
+     "type": "Call"
+    },
+    {
+     "date": "2016-10-03",
+     "amount": 10846984.02,
+     "type": "Call"
+    },
+    {
+     "date": "2017-04-17",
+     "amount": 11730107.15,
+     "type": "Call"
+    },
+    {
+     "date": "2017-07-17",
+     "amount": 13593745.93,
+     "type": "Fee"
+    },
+    {
+     "date": "2017-08-15",
+     "amount": 9187692.78,
+     "type": "Call"
+    },
+    {
+     "date": "2018-01-08",
+     "amount": 7858001.82,
+     "type": "Call"
+    },
+    {
+     "date": "2018-07-06",
+     "amount": 14594135.79,
+     "type": "Distribution"
+    },
+    {
+     "date": "2018-11-14",
+     "amount": 15741446.17,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-07-15",
+     "amount": 11880240.49,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2019-11-18",
+     "amount": 13823720.16,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-04-29",
+     "amount": 10230936.42,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-08-11",
+     "amount": 15694264.08,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-03-15",
+     "amount": 13258011.54,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2021-10-11",
+     "amount": 8615224.67,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-11-01",
+     "amount": 3609744.88,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-02-14",
+     "amount": 4626804.17,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-06-24",
+     "amount": 9313283.04,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-05-24",
+     "amount": 12701445.86,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-01-06",
+     "amount": 6028855.42,
+     "type": "RecallableDistribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2016-12-31",
+     "value": 51265879.1
+    },
+    {
+     "date": "2017-12-31",
+     "value": 88781473.28
+    },
+    {
+     "date": "2018-12-31",
+     "value": 105314677.51
+    },
+    {
+     "date": "2019-12-31",
+     "value": 84699660.96
+    },
+    {
+     "date": "2020-12-31",
+     "value": 102722207.81
+    },
+    {
+     "date": "2021-12-31",
+     "value": 21487631.21
+    },
+    {
+     "date": "2022-12-31",
+     "value": 40186182.69
+    },
+    {
+     "date": "2023-12-31",
+     "value": 42547529.16
+    },
+    {
+     "date": "2024-12-31",
+     "value": 71791543.86
+    },
+    {
+     "date": "2025-12-31",
+     "value": 57082012.24
+    }
+   ],
+   "expected": {
+    "dpi": 1.410613435841078,
+    "rvpi": 0.5746627032347653,
+    "tvpi": 1.9852761390758435,
+    "irr": 0.1412207800112842
+   }
+  },
+  {
+   "name": "Fund 2015-2",
+   "vintageYear": 2015,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2015-05-06",
+     "amount": 11329343.07,
+     "type": "Call"
+    },
+    {
+     "date": "2015-11-02",
+     "amount": 13853625.44,
+     "type": "Call"
+    },
+    {
+     "date": "2016-04-21",
+     "amount": 12704534.32,
+     "type": "Call"
+    },
+    {
+     "date": "2016-09-07",
+     "amount": 11570209.33,
+     "type": "Call"
+    },
+    {
+     "date": "2016-12-08",
+     "amount": 6339160.7,
+     "type": "Fee"
+    },
+    {
+     "date": "2017-01-23",
+     "amount": 4857897.01,
+     "type": "Call"
+    },
+    {
+     "date": "2017-08-23",
+     "amount": 13690523.2,
+     "type": "Call"
+    },
+    {
+     "date": "2017-12-18",
+     "amount": 6769484.93,
+     "type": "Call"
+    },
+    {
+     "date": "2018-03-05",
+     "amount": 7301220.81,
+     "type": "Fee"
+    },
+    {
+     "date": "2018-09-20",
+     "amount": 11457403.42,
+     "type": "Call"
+    },
+    {
+     "date": "2019-05-06",
+     "amount": 7032573.4,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-08-07",
+     "amount": 27735946.98,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-05-04",
+     "amount": 9666628.0,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-08-04",
+     "amount": 13901655.05,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-01-06",
+     "amount": 21591948.75,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-08-09",
+     "amount": 9763506.59,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-09-12",
+     "amount": 8404709.35,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-10-30",
+     "amount": 8490099.14,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-05-10",
+     "amount": 21121158.28,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2024-12-23",
+     "amount": 23861833.55,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2025-03-19",
+     "amount": 9387936.94,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2016-12-31",
+     "value": 93475794.45
+    },
+    {
+     "date": "2017-12-31",
+     "value": 57662409.1
+    },
+    {
+     "date": "2018-12-31",
+     "value": 65540272.93
+    },
+    {
+     "date": "2019-12-31",
+     "value": 32540783.13
+    },
+    {
+     "date": "2020-12-31",
+     "value": 97881275.8
+    },
+    {
+     "date": "2021-12-31",
+     "value": 52524578.35
+    },
+    {
+     "date": "2022-12-31",
+     "value": 63670380.68
+    },
+    {
+     "date": "2023-12-31",
+     "value": 73329492.95
+    },
+    {
+     "date": "2024-12-31",
+     "value": 65833236.12
+    },
+    {
+     "date": "2025-12-31",
+     "value": 103104186.64
+    }
+   ],
+   "expected": {
+    "dpi": 1.6116202355791118,
+    "rvpi": 1.0323487969555676,
+    "tvpi": 2.6439690325346796,
+    "irr": 0.16216130342947938
+   }
+  },
+  {
+   "name": "Fund 2015-3",
+   "vintageYear": 2015,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2015-05-18",
+     "amount": 5795872.78,
+     "type": "Call"
+    },
+    {
+     "date": "2015-11-02",
+     "amount": 2823623.28,
+     "type": "Call"
+    },
+    {
+     "date": "2016-05-19",
+     "amount": 4371962.79,
+     "type": "Call"
+    },
+    {
+     "date": "2016-09-27",
+     "amount": 4610898.43,
+     "type": "Call"
+    },
+    {
+     "date": "2017-05-09",
+     "amount": 2423191.4,
+     "type": "Call"
+    },
+    {
+     "date": "2017-11-27",
+     "amount": 4763993.13,
+     "type": "Fee"
+    },
+    {
+     "date": "2018-02-12",
+     "amount": 5080161.71,
+     "type": "Fee"
+    },
+    {
+     "date": "2018-07-16",
+     "amount": 3299482.15,
+     "type": "Call"
+    },
+    {
+     "date": "2018-09-17",
+     "amount": 4261989.76,
+     "type": "Call"
+    },
+    {
+     "date": "2019-03-05",
+     "amount": 5385703.2,
+     "type": "Fee"
+    },
+    {
+     "date": "2019-07-18",
+     "amount": 10360241.73,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-12-10",
+     "amount": 5268410.85,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-03-16",
+     "amount": 7283765.35,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-09-10",
+     "amount": 7343591.56,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-01-12",
+     "amount": 3496653.63,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-06-14",
+     "amount": 6479799.5,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-09-13",
+     "amount": 7843911.73,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-12-20",
+     "amount": 11888861.53,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-06-06",
+     "amount": 6348406.31,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2023-03-16",
+     "amount": 9920772.39,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-07-19",
+     "amount": 12123623.78,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-05-13",
+     "amount": 12606240.6,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-09-26",
+     "amount": 7807923.62,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-02-13",
+     "amount": 6849482.75,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2016-12-31",
+     "value": 25492381.69
+    },
+    {
+     "date": "2017-12-31",
+     "value": 15541742.13
+    },
+    {
+     "date": "2018-12-31",
+     "value": 13345571.93
+    },
+    {
+     "date": "2019-12-31",
+     "value": 42790607.21
+    },
+    {
+     "date": "2020-12-31",
+     "value": 23881897.88
+    },
+    {
+     "date": "2021-12-31",
+     "value": 21294360.16
+    },
+    {
+     "date": "2022-12-31",
+     "value": 42149347.51
+    },
+    {
+     "date": "2023-12-31",
+     "value": 27372193.92
+    },
+    {
+     "date": "2024-12-31",
+     "value": 45880096.4
+    },
+    {
+     "date": "2025-12-31",
+     "value": 44418346.32
+    }
+   ],
+   "expected": {
+    "dpi": 2.700376324232769,
+    "rvpi": 1.0374027192369393,
+    "tvpi": 3.7377790434697085,
+    "irr": 0.26980501140249
+   }
+  },
+  {
+   "name": "Fund 2015-4",
+   "vintageYear": 2015,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2015-08-24",
+     "amount": 4595389.61,
+     "type": "Call"
+    },
+    {
+     "date": "2016-06-27",
+     "amount": 2259788.68,
+     "type": "Call"
+    },
+    {
+     "date": "2016-10-13",
+     "amount": 4301596.29,
+     "type": "Call"
+    },
+    {
+     "date": "2017-06-12",
+     "amount": 2293338.65,
+     "type": "Call"
+    },
+    {
+     "date": "2017-10-11",
+     "amount": 2531921.4,
+     "type": "Call"
+    },
+    {
+     "date": "2018-01-08",
+     "amount": 1932309.64,
+     "type": "Distribution"
+    },
+    {
+     "date": "2018-06-15",
+     "amount": 2188462.83,
+     "type": "Call"
+    },
+    {
+     "date": "2018-10-16",
+     "amount": 5859026.49,
+     "type": "Call"
+    },
+    {
+     "date": "2019-01-10",
+     "amount": 5800387.25,
+     "type": "Call"
+    },
+    {
+     "date": "2019-04-09",
+     "amount": 5476447.53,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-05-15",
+     "amount": 5530438.17,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-09-04",
+     "amount": 6979752.17,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-07-20",
+     "amount": 6035412.57,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2020-08-21",
+     "amount": 3353120.68,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2020-12-17",
+     "amount": 5562963.18,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-05-03",
+     "amount": 5601215.59,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-09-20",
+     "amount": 5216712.08,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2022-03-21",
+     "amount": 2934871.38,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2022-06-20",
+     "amount": 4432666.93,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-08-17",
+     "amount": 2203666.62,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-05-19",
+     "amount": 3261448.09,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-09-11",
+     "amount": 6478198.83,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-06-10",
+     "amount": 2044281.66,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2024-12-18",
+     "amount": 6811952.66,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2025-02-17",
+     "amount": 2558480.99,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2016-12-31",
+     "value": 27788477.31
+    },
+    {
+     "date": "2017-12-31",
+     "value": 21587226.99
+    },
+    {
+     "date": "2018-12-31",
+     "value": 15087724.73
+    },
+    {
+     "date": "2019-12-31",
+     "value": 28417285.27
+    },
+    {
+     "date": "2020-12-31",
+     "value": 9282394.69
+    },
+    {
+     "date": "2021-12-31",
+     "value": 32492741.89
+    },
+    {
+     "date": "2022-12-31",
+     "value": 32547325.14
+    },
+    {
+     "date": "2023-12-31",
+     "value": 6556288.14
+    },
+    {
+     "date": "2024-12-31",
+     "value": 11231575.49
+    },
+    {
+     "date": "2025-12-31",
+     "value": 27392509.04
+    }
+   ],
+   "expected": {
+    "dpi": 2.5616549193750195,
+    "rvpi": 0.9182899961163812,
+    "tvpi": 3.479944915491401,
+    "irr": 0.31896733290253204
+   }
+  },
+  {
+   "name": "Fund 2015-5",
+   "vintageYear": 2015,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2015-09-25",
+     "amount": 4378010.81,
+     "type": "Call"
+    },
+    {
+     "date": "2015-12-25",
+     "amount": 5243622.56,
+     "type": "Call"
+    },
+    {
+     "date": "2016-07-04",
+     "amount": 13901507.56,
+     "type": "Call"
+    },
+    {
+     "date": "2016-09-30",
+     "amount": 6356460.37,
+     "type": "Call"
+    },
+    {
+     "date": "2017-04-20",
+     "amount": 7277672.4,
+     "type": "Call"
+    },
+    {
+     "date": "2017-06-16",
+     "amount": 11695862.29,
+     "type": "Call"
+    },
+    {
+     "date": "2017-10-02",
+     "amount": 11378439.31,
+     "type": "Call"
+    },
+    {
+     "date": "2017-12-11",
+     "amount": 11058585.49,
+     "type": "Distribution"
+    },
+    {
+     "date": "2018-04-20",
+     "amount": 7880785.35,
+     "type": "Call"
+    },
+    {
+     "date": "2018-06-15",
+     "amount": 6506431.61,
+     "type": "Call"
+    },
+    {
+     "date": "2018-10-15",
+     "amount": 13913890.05,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-01-15",
+     "amount": 14916341.95,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-02-27",
+     "amount": 8981486.72,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-10-16",
+     "amount": 14401247.72,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-05-05",
+     "amount": 2741747.04,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-01-06",
+     "amount": 7125122.72,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-05-31",
+     "amount": 11224698.97,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2022-01-18",
+     "amount": 3607252.99,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-03-14",
+     "amount": 2703528.89,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-06-30",
+     "amount": 2736529.63,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-05-16",
+     "amount": 9320294.97,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-11-06",
+     "amount": 4965181.71,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-03-05",
+     "amount": 15459443.82,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-01-17",
+     "amount": 4212956.62,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-07-21",
+     "amount": 13917340.88,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2016-12-31",
+     "value": 51719005.55
+    },
+    {
+     "date": "2017-12-31",
+     "value": 46355229.73
+    },
+    {
+     "date": "2018-12-31",
+     "value": 72492917.22
+    },
+    {
+     "date": "2019-12-31",
+     "value": 41884376.74
+    },
+    {
+     "date": "2020-12-31",
+     "value": 69766912.54
+    },
+    {
+     "date": "2021-12-31",
+     "value": 49055266.63
+    },
+    {
+     "date": "2022-12-31",
+     "value": 76982273.45
+    },
+    {
+     "date": "2023-12-31",
+     "value": 20949824.52
+    },
+    {
+     "date": "2024-12-31",
+     "value": 36507485.54
+    },
+    {
+     "date": "2025-12-31",
+     "value": 25375941.83
+    }
+   ],
+   "expected": {
+    "dpi": 1.8934325508473462,
+    "rvpi": 0.34007441103550234,
+    "tvpi": 2.2335069618828487,
+    "irr": 0.21204989292010937
+   }
+  },
+  {
+   "name": "Fund 2016-1",
+   "vintageYear": 2016,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2016-05-09",
+     "amount": 844012.98,
+     "type": "Call"
+    },
+    {
+     "date": "2016-09-07",
+     "amount": 2528882.42,
+     "type": "Fee"
+    },
+    {
+     "date": "2016-11-29",
+     "amount": 1410624.6,
+     "type": "Call"
+    },
+    {
+     "date": "2017-12-04",
+     "amount": 1734176.57,
+     "type": "Call"
+    },
+    {
+     "date": "2018-06-04",
+     "amount": 2046893.12,
+     "type": "Distribution"
+    },
+    {
+     "date": "2018-09-26",
+     "amount": 802587.69,
+     "type": "Call"
+    },
+    {
+     "date": "2018-12-17",
+     "amount": 1029038.04,
+     "type": "Call"
+    },
+    {
+     "date": "2019-02-11",
+     "amount": 982616.45,
+     "type": "Call"
+    },
+    {
+     "date": "2019-05-13",
+     "amount": 2230544.8,
+     "type": "Call"
+    },
+    {
+     "date": "2019-10-07",
+     "amount": 2202503.33,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-11-27",
+     "amount": 1519104.06,
+     "type": "Call"
+    },
+    {
+     "date": "2020-06-29",
+     "amount": 799658.36,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-01-04",
+     "amount": 1423969.27,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-02-26",
+     "amount": 492235.12,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2021-06-21",
+     "amount": 1786267.76,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-03-07",
+     "amount": 803692.64,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-07-01",
+     "amount": 1241492.27,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-11-17",
+     "amount": 1654186.65,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-03-31",
+     "amount": 1366716.76,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-05-08",
+     "amount": 1478401.32,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-09-04",
+     "amount": 1405078.15,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-03-22",
+     "amount": 427594.63,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-06-03",
+     "amount": 1457625.27,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-01-27",
+     "amount": 1073470.91,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-06-04",
+     "amount": 702815.05,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2017-12-31",
+     "value": 8033288.24
+    },
+    {
+     "date": "2018-12-31",
+     "value": 13086173.64
+    },
+    {
+     "date": "2019-12-31",
+     "value": 12387147.9
+    },
+    {
+     "date": "2020-12-31",
+     "value": 10675082.08
+    },
+    {
+     "date": "2021-12-31",
+     "value": 13231559.76
+    },
+    {
+     "date": "2022-12-31",
+     "value": 4851199.58
+    },
+    {
+     "date": "2023-12-31",
+     "value": 13497508.68
+    },
+    {
+     "date": "2024-12-31",
+     "value": 9980556.34
+    },
+    {
+     "date": "2025-12-31",
+     "value": 8268158.77
+    }
+   ],
+   "expected": {
+    "dpi": 1.5565848134850353,
+    "rvpi": 0.6320455143899769,
+    "tvpi": 2.1886303278750123,
+    "irr": 0.18235604989619308
+   }
+  },
+  {
+   "name": "Fund 2016-2",
+   "vintageYear": 2016,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2016-07-25",
+     "amount": 6964995.07,
+     "type": "Call"
+    },
+    {
+     "date": "2017-01-27",
+     "amount": 5074783.6,
+     "type": "Call"
+    },
+    {
+     "date": "2017-04-19",
+     "amount": 6050140.68,
+     "type": "Call"
+    },
+    {
+     "date": "2017-09-18",
+     "amount": 3408507.65,
+     "type": "Fee"
+    },
+    {
+     "date": "2018-01-17",
+     "amount": 5407455.84,
+     "type": "Call"
+    },
+    {
+     "date": "2018-05-30",
+     "amount": 6364269.57,
+     "type": "Call"
+    },
+    {
+     "date": "2018-12-13",
+     "amount": 2415926.46,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-03-28",
+     "amount": 1205286.6,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-04-24",
+     "amount": 6353271.37,
+     "type": "Call"
+    },
+    {
+     "date": "2019-07-22",
+     "amount": 5196604.71,
+     "type": "Call"
+    },
+    {
+     "date": "2020-03-23",
+     "amount": 2747322.4,
+     "type": "Call"
+    },
+    {
+     "date": "2020-07-13",
+     "amount": 2272667.34,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-11-17",
+     "amount": 1373115.89,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2022-11-24",
+     "amount": 1762424.47,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-05-05",
+     "amount": 3528220.6,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-05-13",
+     "amount": 4353874.07,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-12-09",
+     "amount": 6189409.19,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-01-28",
+     "amount": 3411594.56,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-06-02",
+     "amount": 1887996.67,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2017-12-31",
+     "value": 30024809.7
+    },
+    {
+     "date": "2018-12-31",
+     "value": 24622935.97
+    },
+    {
+     "date": "2019-12-31",
+     "value": 35001389.44
+    },
+    {
+     "date": "2020-12-31",
+     "value": 13151183.28
+    },
+    {
+     "date": "2021-12-31",
+     "value": 13840025.27
+    },
+    {
+     "date": "2022-12-31",
+     "value": 23259063.71
+    },
+    {
+     "date": "2023-12-31",
+     "value": 43963030.49
+    },
+    {
+     "date": "2024-12-31",
+     "value": 15271344.99
+    },
+    {
+     "date": "2025-12-31",
+     "value": 36094386.71
+    }
+   ],
+   "expected": {
+    "dpi": 0.5970590188147432,
+    "rvpi": 0.7588059043579839,
+    "tvpi": 1.355864923172727,
+    "irr": 0.04689004048695849
+   }
+  },
+  {
+   "name": "Fund 2016-3",
+   "vintageYear": 2016,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2016-08-26",
+     "amount": 12142509.48,
+     "type": "Call"
+    },
+    {
+     "date": "2018-10-23",
+     "amount": 13884234.88,
+     "type": "Call"
+    },
+    {
+     "date": "2019-04-02",
+     "amount": 12674163.74,
+     "type": "Call"
+    },
+    {
+     "date": "2019-05-23",
+     "amount": 12508884.91,
+     "type": "Call"
+    },
+    {
+     "date": "2019-09-23",
+     "amount": 7845034.34,
+     "type": "Call"
+    },
+    {
+     "date": "2019-12-23",
+     "amount": 4476132.11,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-03-31",
+     "amount": 13049313.09,
+     "type": "Call"
+    },
+    {
+     "date": "2020-06-22",
+     "amount": 3689870.38,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-10-12",
+     "amount": 8149056.66,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-01-07",
+     "amount": 10237592.17,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-03-31",
+     "amount": 9977405.74,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-01-11",
+     "amount": 2379920.7,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-03-16",
+     "amount": 8978834.47,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-06-06",
+     "amount": 7351742.5,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-04-24",
+     "amount": 6984850.54,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-07-20",
+     "amount": 9279261.49,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-12-08",
+     "amount": 5434945.74,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-04-30",
+     "amount": 2810203.27,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2024-08-01",
+     "amount": 7090605.28,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-07-22",
+     "amount": 7872186.26,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2017-12-31",
+     "value": 17908891.27
+    },
+    {
+     "date": "2018-12-31",
+     "value": 42880004.81
+    },
+    {
+     "date": "2019-12-31",
+     "value": 45627110.68
+    },
+    {
+     "date": "2020-12-31",
+     "value": 63881249.41
+    },
+    {
+     "date": "2021-12-31",
+     "value": 62874856.61
+    },
+    {
+     "date": "2022-12-31",
+     "value": 49592441.14
+    },
+    {
+     "date": "2023-12-31",
+     "value": 72720008.18
+    },
+    {
+     "date": "2024-12-31",
+     "value": 23939493.24
+    },
+    {
+     "date": "2025-12-31",
+     "value": 48648583.71
+    }
+   ],
+   "expected": {
+    "dpi": 1.3135529628678282,
+    "rvpi": 0.6746988926451724,
+    "tvpi": 1.9882518555130007,
+    "irr": 0.16565506044125825
+   }
+  },
+  {
+   "name": "Fund 2016-4",
+   "vintageYear": 2016,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2016-07-11",
+     "amount": 844306.11,
+     "type": "Call"
+    },
+    {
+     "date": "2016-10-03",
+     "amount": 2152777.73,
+     "type": "Call"
+    },
+    {
+     "date": "2017-07-17",
+     "amount": 2279520.44,
+     "type": "Call"
+    },
+    {
+     "date": "2017-12-26",
+     "amount": 1192827.06,
+     "type": "Call"
+    },
+    {
+     "date": "2018-08-20",
+     "amount": 2194932.44,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-01-21",
+     "amount": 1208766.62,
+     "type": "Call"
+    },
+    {
+     "date": "2019-07-03",
+     "amount": 1183548.13,
+     "type": "Call"
+    },
+    {
+     "date": "2019-08-19",
+     "amount": 858744.24,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-12-09",
+     "amount": 2542332.06,
+     "type": "Call"
+    },
+    {
+     "date": "2020-02-17",
+     "amount": 2786601.67,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-07-23",
+     "amount": 2603781.17,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-08-21",
+     "amount": 2257822.62,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-04-12",
+     "amount": 2130792.68,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-05-20",
+     "amount": 2673734.67,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-10-13",
+     "amount": 2773263.56,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-12-06",
+     "amount": 1726740.69,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-02-23",
+     "amount": 2145592.68,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-10-11",
+     "amount": 587363.53,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2024-01-15",
+     "amount": 2153443.73,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-10-21",
+     "amount": 1215135.49,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2025-02-24",
+     "amount": 1385400.22,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-12-10",
+     "amount": 1917671.51,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2017-12-31",
+     "value": 11372811.53
+    },
+    {
+     "date": "2018-12-31",
+     "value": 10752708.16
+    },
+    {
+     "date": "2019-12-31",
+     "value": 8488985.31
+    },
+    {
+     "date": "2020-12-31",
+     "value": 3969045.55
+    },
+    {
+     "date": "2021-12-31",
+     "value": 3340884.58
+    },
+    {
+     "date": "2022-12-31",
+     "value": 12528942.21
+    },
+    {
+     "date": "2023-12-31",
+     "value": 5874304.33
+    },
+    {
+     "date": "2024-12-31",
+     "value": 7145703.52
+    },
+    {
+     "date": "2025-12-31",
+     "value": 11576642.36
+    }
+   ],
+   "expected": {
+    "dpi": 2.578991525062462,
+    "rvpi": 1.0151317982681485,
+    "tvpi": 3.594123323330611,
+    "irr": 0.36798529341670333
+   }
+  },
+  {
+   "name": "Fund 2016-5",
+   "vintageYear": 2016,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2016-05-31",
+     "amount": 6555093.18,
+     "type": "Call"
+    },
+    {
+     "date": "2017-11-06",
+     "amount": 5278432.9,
+     "type": "Call"
+    },
+    {
+     "date": "2018-03-12",
+     "amount": 6481218.44,
+     "type": "Call"
+    },
+    {
+     "date": "2018-05-21",
+     "amount": 3873659.0,
+     "type": "Call"
+    },
+    {
+     "date": "2018-07-30",
+     "amount": 2848794.76,
+     "type": "Call"
+    },
+    {
+     "date": "2019-02-05",
+     "amount": 6550735.07,
+     "type": "Fee"
+    },
+    {
+     "date": "2019-04-29",
+     "amount": 3062604.95,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-08-22",
+     "amount": 2920230.2,
+     "type": "Call"
+    },
+    {
+     "date": "2019-11-18",
+     "amount": 5961781.46,
+     "type": "Call"
+    },
+    {
+     "date": "2020-01-14",
+     "amount": 4927206.18,
+     "type": "Call"
+    },
+    {
+     "date": "2020-05-29",
+     "amount": 11246829.1,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-08-20",
+     "amount": 6245594.03,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-11-30",
+     "amount": 3174646.72,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-02-09",
+     "amount": 7986671.05,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-02-20",
+     "amount": 12294859.82,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-09-04",
+     "amount": 12054651.92,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-03-18",
+     "amount": 7309345.8,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2025-05-19",
+     "amount": 4289802.1,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2017-12-31",
+     "value": 28887701.98
+    },
+    {
+     "date": "2018-12-31",
+     "value": 40030459.59
+    },
+    {
+     "date": "2019-12-31",
+     "value": 31667983.39
+    },
+    {
+     "date": "2020-12-31",
+     "value": 13788189.76
+    },
+    {
+     "date": "2021-12-31",
+     "value": 42146607.24
+    },
+    {
+     "date": "2022-12-31",
+     "value": 40987219.76
+    },
+    {
+     "date": "2023-12-31",
+     "value": 32111506.91
+    },
+    {
+     "date": "2024-12-31",
+     "value": 38616402.07
+    },
+    {
+     "date": "2025-12-31",
+     "value": 34011708.45
+    }
+   ],
+   "expected": {
+    "dpi": 1.49051215145203,
+    "rvpi": 0.7492035856534547,
+    "tvpi": 2.239715737105485,
+    "irr": 0.1688467991772079
+   }
+  },
+  {
+   "name": "Fund 2017-1",
+   "vintageYear": 2017,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2017-06-05",
+     "amount": 2534634.53,
+     "type": "Call"
+    },
+    {
+     "date": "2017-08-14",
+     "amount": 3686814.63,
+     "type": "Call"
+    },
+    {
+     "date": "2017-11-15",
+     "amount": 6901048.44,
+     "type": "Fee"
+    },
+    {
+     "date": "2018-06-08",
+     "amount": 6179874.06,
+     "type": "Call"
+    },
+    {
+     "date": "2018-07-30",
+     "amount": 3234977.74,
+     "type": "Call"
+    },
+    {
+     "date": "2019-03-18",
+     "amount": 2258895.07,
+     "type": "Call"
+    },
+    {
+     "date": "2019-06-03",
+     "amount": 3699783.88,
+     "type": "Call"
+    },
+    {
+     "date": "2019-07-22",
+     "amount": 4276422.18,
+     "type": "Fee"
+    },
+    {
+     "date": "2019-10-28",
+     "amount": 2121912.44,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-02-03",
+     "amount": 2188204.31,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-04-29",
+     "amount": 1269500.32,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-09-08",
+     "amount": 5210763.56,
+     "type": "Call"
+    },
+    {
+     "date": "2021-01-18",
+     "amount": 2254629.94,
+     "type": "Call"
+    },
+    {
+     "date": "2021-07-19",
+     "amount": 1363473.49,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-11-12",
+     "amount": 2146224.83,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-03-25",
+     "amount": 2773549.49,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-06-10",
+     "amount": 1785980.69,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-09-28",
+     "amount": 1293459.49,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2023-02-13",
+     "amount": 1514185.03,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-08-31",
+     "amount": 3023031.41,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-11-29",
+     "amount": 1597047.92,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-01-24",
+     "amount": 3777857.83,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-08-08",
+     "amount": 1371905.73,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-12-17",
+     "amount": 3957116.29,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-08-07",
+     "amount": 1102750.93,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2018-12-31",
+     "value": 14647011.96
+    },
+    {
+     "date": "2019-12-31",
+     "value": 41061042.56
+    },
+    {
+     "date": "2020-12-31",
+     "value": 39943161.16
+    },
+    {
+     "date": "2021-12-31",
+     "value": 15319795.23
+    },
+    {
+     "date": "2022-12-31",
+     "value": 16542757.54
+    },
+    {
+     "date": "2023-12-31",
+     "value": 43508105.97
+    },
+    {
+     "date": "2024-12-31",
+     "value": 15631760.96
+    },
+    {
+     "date": "2025-12-31",
+     "value": 20628982.51
+    }
+   ],
+   "expected": {
+    "dpi": 0.7775317230384919,
+    "rvpi": 0.5126761387767127,
+    "tvpi": 1.2902078618152046,
+    "irr": 0.05080795995112565
+   }
+  },
+  {
+   "name": "Fund 2017-2",
+   "vintageYear": 2017,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2017-05-05",
+     "amount": 892501.23,
+     "type": "Call"
+    },
+    {
+     "date": "2017-10-18",
+     "amount": 1430796.76,
+     "type": "Call"
+    },
+    {
+     "date": "2018-05-30",
+     "amount": 1845010.25,
+     "type": "Call"
+    },
+    {
+     "date": "2018-07-09",
+     "amount": 907977.53,
+     "type": "Call"
+    },
+    {
+     "date": "2019-01-04",
+     "amount": 1197752.08,
+     "type": "Call"
+    },
+    {
+     "date": "2019-05-08",
+     "amount": 845135.66,
+     "type": "Call"
+    },
+    {
+     "date": "2019-08-27",
+     "amount": 1419873.72,
+     "type": "Distribution"
+    },
+    {
+     "date": "2019-10-09",
+     "amount": 1886571.29,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-02-06",
+     "amount": 1815063.22,
+     "type": "Call"
+    },
+    {
+     "date": "2020-03-30",
+     "amount": 2447961.43,
+     "type": "Call"
+    },
+    {
+     "date": "2020-08-06",
+     "amount": 1932946.95,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-10-12",
+     "amount": 1709466.34,
+     "type": "Call"
+    },
+    {
+     "date": "2020-12-17",
+     "amount": 2733806.2,
+     "type": "Call"
+    },
+    {
+     "date": "2021-10-11",
+     "amount": 2293373.18,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-02-28",
+     "amount": 1028018.06,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-10-31",
+     "amount": 2532194.22,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-05-15",
+     "amount": 1378529.75,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-11-06",
+     "amount": 1845647.47,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-01-26",
+     "amount": 1579806.71,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-05-05",
+     "amount": 2226425.58,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-08-04",
+     "amount": 2113522.07,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2018-12-31",
+     "value": 4198131.81
+    },
+    {
+     "date": "2019-12-31",
+     "value": 11876797.51
+    },
+    {
+     "date": "2020-12-31",
+     "value": 13597904.12
+    },
+    {
+     "date": "2021-12-31",
+     "value": 5023206.9
+    },
+    {
+     "date": "2022-12-31",
+     "value": 4484346.29
+    },
+    {
+     "date": "2023-12-31",
+     "value": 10930968.81
+    },
+    {
+     "date": "2024-12-31",
+     "value": 15958098.18
+    },
+    {
+     "date": "2025-12-31",
+     "value": 9095572.93
+    }
+   ],
+   "expected": {
+    "dpi": 1.2787555822905161,
+    "rvpi": 0.574742647623113,
+    "tvpi": 1.8534982299136291,
+    "irr": 0.17219981374065896
+   }
+  },
+  {
+   "name": "Fund 2017-3",
+   "vintageYear": 2017,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2017-05-01",
+     "amount": 5742012.27,
+     "type": "Call"
+    },
+    {
+     "date": "2017-05-24",
+     "amount": 5625512.36,
+     "type": "Fee"
+    },
+    {
+     "date": "2017-11-27",
+     "amount": 6615679.63,
+     "type": "Call"
+    },
+    {
+     "date": "2018-07-09",
+     "amount": 2889602.07,
+     "type": "Fee"
+    },
+    {
+     "date": "2018-09-13",
+     "amount": 5492582.73,
+     "type": "Call"
+    },
+    {
+     "date": "2019-01-01",
+     "amount": 2854868.9,
+     "type": "Fee"
+    },
+    {
+     "date": "2019-04-29",
+     "amount": 5037437.92,
+     "type": "Call"
+    },
+    {
+     "date": "2019-06-10",
+     "amount": 3914518.0,
+     "type": "Fee"
+    },
+    {
+     "date": "2019-10-31",
+     "amount": 3681678.07,
+     "type": "Fee"
+    },
+    {
+     "date": "2019-12-30",
+     "amount": 2001248.26,
+     "type": "Fee"
+    },
+    {
+     "date": "2020-11-30",
+     "amount": 4170467.17,
+     "type": "Call"
+    },
+    {
+     "date": "2021-03-16",
+     "amount": 4784052.69,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-11-03",
+     "amount": 4140262.4,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-11-22",
+     "amount": 5098082.3,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-04-18",
+     "amount": 3932714.65,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-10-11",
+     "amount": 4876159.68,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-09-13",
+     "amount": 2813280.31,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2024-01-19",
+     "amount": 1373292.45,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-05-06",
+     "amount": 994628.29,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-08-02",
+     "amount": 1333226.7,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-01-27",
+     "amount": 3073057.36,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-03-24",
+     "amount": 5239693.35,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-09-12",
+     "amount": 2990871.93,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2018-12-31",
+     "value": 23007462.71
+    },
+    {
+     "date": "2019-12-31",
+     "value": 40232280.16
+    },
+    {
+     "date": "2020-12-31",
+     "value": 16341989.86
+    },
+    {
+     "date": "2021-12-31",
+     "value": 49771968.66
+    },
+    {
+     "date": "2022-12-31",
+     "value": 40208861.57
+    },
+    {
+     "date": "2023-12-31",
+     "value": 40786422.23
+    },
+    {
+     "date": "2024-12-31",
+     "value": 12983858.2
+    },
+    {
+     "date": "2025-12-31",
+     "value": 49686264.52
+    }
+   ],
+   "expected": {
+    "dpi": 0.8464093288475137,
+    "rvpi": 1.0345785765260636,
+    "tvpi": 1.880987905373577,
+    "irr": 0.11265003669611791
+   }
+  },
+  {
+   "name": "Fund 2017-4",
+   "vintageYear": 2017,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2017-03-29",
+     "amount": 4711470.66,
+     "type": "Call"
+    },
+    {
+     "date": "2019-02-21",
+     "amount": 3807048.85,
+     "type": "Fee"
+    },
+    {
+     "date": "2019-07-29",
+     "amount": 3995984.9,
+     "type": "Call"
+    },
+    {
+     "date": "2019-09-24",
+     "amount": 2876015.35,
+     "type": "Call"
+    },
+    {
+     "date": "2019-12-16",
+     "amount": 5850717.86,
+     "type": "Call"
+    },
+    {
+     "date": "2020-10-12",
+     "amount": 973876.2,
+     "type": "Distribution"
+    },
+    {
+     "date": "2020-12-03",
+     "amount": 5380924.16,
+     "type": "Call"
+    },
+    {
+     "date": "2021-03-22",
+     "amount": 1487531.96,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-10-07",
+     "amount": 1073977.71,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-04-04",
+     "amount": 4255365.75,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-09-26",
+     "amount": 3507104.8,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2023-12-11",
+     "amount": 4004438.16,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-09-03",
+     "amount": 1085438.53,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2025-04-25",
+     "amount": 4405346.14,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-07-17",
+     "amount": 3372137.73,
+     "type": "RecallableDistribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2018-12-31",
+     "value": 22180238.39
+    },
+    {
+     "date": "2019-12-31",
+     "value": 29106800.42
+    },
+    {
+     "date": "2020-12-31",
+     "value": 12191902.04
+    },
+    {
+     "date": "2021-12-31",
+     "value": 28108553.42
+    },
+    {
+     "date": "2022-12-31",
+     "value": 16029745.16
+    },
+    {
+     "date": "2023-12-31",
+     "value": 5959624.72
+    },
+    {
+     "date": "2024-12-31",
+     "value": 11026053.02
+    },
+    {
+     "date": "2025-12-31",
+     "value": 14251984.14
+    }
+   ],
+   "expected": {
+    "dpi": 0.9077105450600262,
+    "rvpi": 0.5353428567437697,
+    "tvpi": 1.4430534018037962,
+    "irr": 0.07529218539835372
+   }
+  },
+  {
+   "name": "Fund 2018-1",
+   "vintageYear": 2018,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2018-12-06",
+     "amount": 1802667.96,
+     "type": "Call"
+    },
+    {
+     "date": "2019-06-19",
+     "amount": 2722916.83,
+     "type": "Fee"
+    },
+    {
+     "date": "2019-12-06",
+     "amount": 2369891.22,
+     "type": "Call"
+    },
+    {
+     "date": "2020-07-09",
+     "amount": 2054221.5,
+     "type": "Fee"
+    },
+    {
+     "date": "2020-09-25",
+     "amount": 2789414.88,
+     "type": "Call"
+    },
+    {
+     "date": "2020-12-17",
+     "amount": 2605330.51,
+     "type": "Call"
+    },
+    {
+     "date": "2021-03-31",
+     "amount": 362790.07,
+     "type": "Distribution"
+    },
+    {
+     "date": "2021-09-14",
+     "amount": 2708128.94,
+     "type": "Call"
+    },
+    {
+     "date": "2022-01-03",
+     "amount": 2533142.81,
+     "type": "Call"
+    },
+    {
+     "date": "2022-04-22",
+     "amount": 920569.04,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-07-26",
+     "amount": 1817748.84,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-06-26",
+     "amount": 1237257.76,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-08-09",
+     "amount": 630381.1,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-02-28",
+     "amount": 1439573.79,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-05-14",
+     "amount": 1059359.21,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-12-09",
+     "amount": 922722.14,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-01-28",
+     "amount": 1741880.66,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-07-10",
+     "amount": 1180644.22,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2019-12-31",
+     "value": 9127027.77
+    },
+    {
+     "date": "2020-12-31",
+     "value": 17350619.77
+    },
+    {
+     "date": "2021-12-31",
+     "value": 7435853.21
+    },
+    {
+     "date": "2022-12-31",
+     "value": 15842151.71
+    },
+    {
+     "date": "2023-12-31",
+     "value": 9723204.0
+    },
+    {
+     "date": "2024-12-31",
+     "value": 10111006.76
+    },
+    {
+     "date": "2025-12-31",
+     "value": 15670383.7
+    }
+   ],
+   "expected": {
+    "dpi": 0.5776111330203618,
+    "rvpi": 0.8000925153885052,
+    "tvpi": 1.3777036484088672,
+    "irr": 0.07378886413878659
+   }
+  },
+  {
+   "name": "Fund 2018-2",
+   "vintageYear": 2018,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2018-10-11",
+     "amount": 2246258.12,
+     "type": "Call"
+    },
+    {
+     "date": "2019-03-08",
+     "amount": 2579338.27,
+     "type": "Call"
+    },
+    {
+     "date": "2019-07-29",
+     "amount": 1065973.27,
+     "type": "Call"
+    },
+    {
+     "date": "2020-10-06",
+     "amount": 1826133.26,
+     "type": "Call"
+    },
+    {
+     "date": "2020-12-04",
+     "amount": 2783269.91,
+     "type": "Call"
+    },
+    {
+     "date": "2021-08-04",
+     "amount": 2219049.93,
+     "type": "Call"
+    },
+    {
+     "date": "2022-01-05",
+     "amount": 1102271.7,
+     "type": "Call"
+    },
+    {
+     "date": "2022-02-04",
+     "amount": 1273661.2,
+     "type": "Call"
+    },
+    {
+     "date": "2022-05-02",
+     "amount": 2262069.41,
+     "type": "Call"
+    },
+    {
+     "date": "2023-07-12",
+     "amount": 650194.24,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-09-05",
+     "amount": 1660932.25,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-02-07",
+     "amount": 1052869.14,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-06-21",
+     "amount": 1799613.66,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-09-24",
+     "amount": 342540.09,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-03-18",
+     "amount": 1880674.13,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-06-23",
+     "amount": 661112.33,
+     "type": "RecallableDistribution"
+    },
+    {
+     "date": "2025-09-26",
+     "amount": 1748330.85,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2019-12-31",
+     "value": 15716799.83
+    },
+    {
+     "date": "2020-12-31",
+     "value": 5867103.09
+    },
+    {
+     "date": "2021-12-31",
+     "value": 9970667.96
+    },
+    {
+     "date": "2022-12-31",
+     "value": 5830916.18
+    },
+    {
+     "date": "2023-12-31",
+     "value": 5330926.74
+    },
+    {
+     "date": "2024-12-31",
+     "value": 10253062.18
+    },
+    {
+     "date": "2025-12-31",
+     "value": 14272498.35
+    }
+   ],
+   "expected": {
+    "dpi": 0.564365280640766,
+    "rvpi": 0.8222420633939088,
+    "tvpi": 1.3866073440346747,
+    "irr": 0.07074013099719983
+   }
+  },
+  {
+   "name": "Fund 2018-3",
+   "vintageYear": 2018,
+   "commitment": 0.0,
+   "flows": [
+    {
+     "date": "2018-06-18",
+     "amount": 2309474.73,
+     "type": "Call"
+    },
+    {
+     "date": "2018-10-10",
+     "amount": 2595512.19,
+     "type": "Call"
+    },
+    {
+     "date": "2019-04-08",
+     "amount": 5112261.1,
+     "type": "Call"
+    },
+    {
+     "date": "2019-06-19",
+     "amount": 4519462.15,
+     "type": "Call"
+    },
+    {
+     "date": "2019-11-25",
+     "amount": 4295169.49,
+     "type": "Call"
+    },
+    {
+     "date": "2020-04-06",
+     "amount": 5977922.37,
+     "type": "Call"
+    },
+    {
+     "date": "2020-08-04",
+     "amount": 4852666.1,
+     "type": "Fee"
+    },
+    {
+     "date": "2021-03-19",
+     "amount": 6797600.31,
+     "type": "Call"
+    },
+    {
+     "date": "2021-09-14",
+     "amount": 5423215.36,
+     "type": "Call"
+    },
+    {
+     "date": "2021-12-30",
+     "amount": 1091551.25,
+     "type": "Distribution"
+    },
+    {
+     "date": "2022-03-28",
+     "amount": 3296218.44,
+     "type": "Call"
+    },
+    {
+     "date": "2022-06-07",
+     "amount": 1251726.33,
+     "type": "Distribution"
+    },
+    {
+     "date": "2023-01-02",
+     "amount": 2166457.99,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-02-19",
+     "amount": 3596832.41,
+     "type": "Distribution"
+    },
+    {
+     "date": "2024-08-02",
+     "amount": 1906918.12,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-04-14",
+     "amount": 4289783.7,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-09-29",
+     "amount": 3194001.4,
+     "type": "Distribution"
+    },
+    {
+     "date": "2025-12-15",
+     "amount": 5043617.6,
+     "type": "Distribution"
+    }
+   ],
+   "navs": [
+    {
+     "date": "2019-12-31",
+     "value": 20761202.28
+    },
+    {
+     "date": "2020-12-31",
+     "value": 41911194.54
+    },
+    {
+     "date": "2021-12-31",
+     "value": 33655001.96
+    },
+    {
+     "date": "2022-12-31",
+     "value": 25656468.03
+    },
+    {
+     "date": "2023-12-31",
+     "value": 48063364.14
+    },
+    {
+     "date": "2024-12-31",
+     "value": 19272546.18
+    },
+    {
+     "date": "2025-12-31",
+     "value": 20863248.2
+    }
+   ],
+   "expected": {
+    "dpi": 0.49891848476460776,
+    "rvpi": 0.46178570293163995,
+    "tvpi": 0.9607041876962478,
+    "irr": -0.00801472925326197
+   }
+  }
+ ],
+ "vintages": [
+  {
+   "vintageYear": 2015,
+   "pooledTvpi": 2.573872377857752,
+   "pooledDpi": 1.8310295329436421,
+   "pooledIrr": 0.19259098800675473,
+   "tvpi": {
+    "lowerQuartile": 2.2335069618828487,
+    "median": 2.6439690325346796,
+    "upperQuartile": 3.479944915491401,
+    "mean": 2.8160952184908963
+   },
+   "irr": {
+    "lowerQuartile": 0.16216130342947938,
+    "median": 0.21204989292010937,
+    "upperQuartile": 0.26980501140249,
+    "mean": 0.220840864133179
+   }
+  },
+  {
+   "vintageYear": 2016,
+   "pooledTvpi": 2.00022480945111,
+   "pooledDpi": 1.2690386852335171,
+   "pooledIrr": 0.1472388905520937,
+   "tvpi": {
+    "lowerQuartile": 1.9882518555130007,
+    "median": 2.1886303278750123,
+    "upperQuartile": 2.239715737105485,
+    "mean": 2.273317233399367
+   },
+   "irr": {
+    "lowerQuartile": 0.16565506044125825,
+    "median": 0.1688467991772079,
+    "upperQuartile": 0.18235604989619308,
+    "mean": 0.1863466486836642
+   }
+  },
+  {
+   "vintageYear": 2017,
+   "pooledTvpi": 1.6066001913558152,
+   "pooledDpi": 0.8900365969568734,
+   "pooledIrr": 0.0939427336592609,
+   "tvpi": {
+    "lowerQuartile": 1.4048420168066482,
+    "median": 1.6482758158587125,
+    "upperQuartile": 1.860370648778616,
+    "mean": 1.6169368497265517
+   },
+   "irr": {
+    "lowerQuartile": 0.06917112903654671,
+    "median": 0.09397111104723582,
+    "upperQuartile": 0.12753748095725317,
+    "mean": 0.10273749894656406
+   }
+  },
+  {
+   "vintageYear": 2018,
+   "pooledTvpi": 1.1501763729201906,
+   "pooledDpi": 0.5315192298577396,
+   "pooledIrr": 0.02945356606115225,
+   "tvpi": {
+    "lowerQuartile": 1.1692039180525575,
+    "median": 1.3777036484088672,
+    "upperQuartile": 1.3821554962217708,
+    "mean": 1.241671726713263
+   },
+   "irr": {
+    "lowerQuartile": 0.031362700871968935,
+    "median": 0.07074013099719983,
+    "upperQuartile": 0.07226449756799322,
+    "mean": 0.04550475529424149
+   }
+  }
+ ]
+}

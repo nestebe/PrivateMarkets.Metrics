@@ -1,0 +1,7 @@
+numpy==2.5.4
+pandas==3.1.0
+scipy==1.18.1
+numpy-financial==1.0.0
+xirr==0.1.8
+pypme==0.7.0
+privateassets==0.7.1
