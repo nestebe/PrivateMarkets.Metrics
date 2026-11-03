@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>PrivateMarkets.Metrics.Mcp</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <PackageId>PrivateMarkets.Metrics.Mcp</PackageId>
+    <Description>MCP server exposing PrivateMarkets.Metrics (fund metrics, PME, vintage summaries, J-curves) to AI agents over stdio.</Description>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>privatemarkets-mcp</ToolCommandName>
+    <PackageType>McpServer</PackageType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+    <PackageReference Include="ModelContextProtocol" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PrivateMarkets.Metrics\PrivateMarkets.Metrics.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="PrivateMarkets.Metrics.Mcp.Tests" />
+  </ItemGroup>
+
+</Project>
